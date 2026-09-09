@@ -103,7 +103,6 @@ public class ExecutionPlan {
                 }
             }
         }
-
         return true;
     }
 
