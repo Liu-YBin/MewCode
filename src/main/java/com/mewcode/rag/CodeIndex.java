@@ -89,7 +89,6 @@ public class CodeIndex {
                     float[] embedding = embeddingClient.embed(chunk.toEmbeddingText());
                     entries.add(new VectorStore.CodeChunkEntry(chunk, embedding));
                 }
-
                 // 3. 分析关系（仅 Java 文件）
                 if (file.toString().endsWith(".java")) {
                     allRelations.addAll(analyzer.analyzeFile(file));
